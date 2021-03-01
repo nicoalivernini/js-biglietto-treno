@@ -1,8 +1,12 @@
 //Chilometri del passeggero
 var kmPasseggero = prompt("Quanti chilometri vuoi percorrere?");
 
+document.getElementById('chilometri').innerHTML = "I tuoi chilometri sono:" + " " +kmPasseggero
+
 //Età del passeggero
 var etaPasseggero = prompt("Quanti anni hai?");
+
+document.getElementById('eta').innerHTML = "La tua età è di:" + " " + etaPasseggero + " " + "anni"
 
 //Prezzo del biglietto a chilometro
 var prezzoChilometro = 0.21;
@@ -27,11 +31,24 @@ var prezzoBigliettoOver65 = prezzoBiglietto - calcoloBigliettoOver65;
 
 
 if (etaPasseggero < 18) {
-  console.log(prezzoBigliettoUnder18);
+  document.getElementById('prezzo').innerHTML = "Il tuo biglietto scontato del 20% costa:" + " " + prezzoBigliettoUnder18 + "€"
 } else if (etaPasseggero > 65) {
-  console.log(prezzoBigliettoOver65);
+  document.getElementById('prezzo').innerHTML = "Il tuo biglietto scontato del 40% costa:" + " " + prezzoBigliettoOver65 + "€"
 } else {
-  console.log(prezzoBiglietto);
+  document.getElementById('prezzo').innerHTML = "Il tuo biglietto interno costa:" + " " + prezzoBiglietto + "€"
 }
 
-console.log(kmPasseggero, etaPasseggero, prezzoBiglietto);
+console.log(kmPasseggero, etaPasseggero, prezzoBiglietto, prezzoBigliettoOver65);
+
+
+// Numero di riferimento
+
+var referNumber = Math.floor(Math.random() * 10000000);
+
+document.getElementById('refer-number').innerHTML = "Ref. Number:" + " " + referNumber
+
+//Numero del volo
+
+var flightNumber = Math.floor(Math.random() * 10000);
+
+document.getElementById('flight-number').innerHTML = "Numero di volo:" + " " + flightNumber

@@ -3,3 +3,55 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  width: 800px;
+  height: 300px;
+  background-color: rgb(228, 227, 230);
+  border: 1px solid black;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.content-card {
+  border-radius: 10px;
+}
+
+.navbar-card {
+  width: 100%;
+  background-color: rgb(28, 94, 170);
+}
+
+.navbar-card > h1 {
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.text-card {
+  margin-top: 20px;
+}
+
+ul {
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 10px;
+  letter-spacing: 1px;
+}
+
+ul li {
+  padding: 2px 0;
+  color: rgb(28, 94, 170);
+}
+
+.text-card > p {
+  padding: 3px 0;
+  text-transform: uppercase;
+}
