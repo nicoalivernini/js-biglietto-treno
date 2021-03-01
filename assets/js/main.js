@@ -27,10 +27,10 @@ var prezzoBigliettoOver65 = prezzoBiglietto - calcoloBigliettoOver65;
 
 
 if (etaPasseggero < 18) {
-
+  console.log(prezzoBigliettoUnder18);
 } else {
   if (etaPasseggero > 65) {
-
+  console.log(prezzoBigliettoOver65);
   }
 }
 
